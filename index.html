@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentation</title>
+    <style>
+    
+      body {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+        display: flex;
+        min-height: 100vh;
+        line-height: 0.6cm;
+        text-align: justify;
+      }
+
+      .sidebar {
+        width: 250px;
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        box-sizing: border-box;
+        position: fixed;
+        height: 100%;
+      }
+
+      .sidebar h2 {
+        color: #fff;
+        text-align: center;
+      }
+
+      .sidebar ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .sidebar ul li {
+        margin: 10px 0;
+      }
+
+      .sidebar ul li a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+        border-radius: 4px;
+        transition: background 0.3s;
+      }
+
+      .sidebar ul li a:hover {
+        background-color: #575757;
+      }
+
+      .main-content {
+        margin-left: 270px;
+        padding: 20px;
+        flex: 1;
+        box-sizing: border-box;
+      }
+
+      .main-content h1 {
+        text-align: center;
+        color: #333;
+      }
+
+      .section {
+        margin-bottom: 20px;
+      }
+      .web-tech-list li {
+        margin: 30px auto;
+      }
+      .section h2 {
+        border-bottom: 2px solid #333;
+        padding-bottom: 10px;
+        color: #333;
+      }
+
+      .section p {
+        text-align: justify;
+      }
+
+   
+
+  
+
+     li a {
+        text-decoration: none;
+    list-style-type: circle;  
+    color: #333;
+    }
+
+    li a:hover{
+        text-decoration: underline;
+    }
+
+    span{
+        font-weight: bold;
+    }
+
+      @media (max-width: 768px) {
+        .sidebar {
+          width: 100%;
+          height: auto;
+          position: relative;
+        }
+        .main-content {
+          margin-left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <h2>Documentation</h2>
+      <ul>
+        <li><a href="#section1">Introduction</a></li>
+        <li><a href="#section2">Web Development</a></li>
+        <li><a href="#section3">Frontend Languages</a></li>
+        <li><a href="#section4">Backend Languages</a></li>
+        <li><a href="#section5">Data Format</a></li>
+        <li><a href="#section6">Web Protocols</a></li>
+        <li><a href="#section7">Graphics</a></li>
+        <li><a href="#section8">Some Links to Refer</a></li>
+
+    </ul>
+    </div>
+    <div class="main-content">
+      <div id="section1" class="section">
+        <h1>Web Technology</h1>
+        <h2>Introduction</h2>
+        <p>
+          Web Technology refers to the various tools and techniques that are
+          utilized in the process of communication between different types of
+          devices over the Internet. A web browser is used to access web pages.
+          Web browsers can be defined as programs that display text, data,
+          pictures, animation, and video on the Internet. Hyperlinked resources
+          on the World Wide Web can be accessed using software interfaces
+          provided by Web browsers.
+        </p>
+        <h2>Web Technology Terms</h2>
+        <ul class="web-tech-list">
+          <li>
+            <span>World Wide Web (WWW):</span> The World Wide Web is based on several
+            different technologies: Web browsers, Hypertext Markup Language
+            (HTML), and Hypertext Transfer Protocol (HTTP).
+          </li>
+          <li>
+           <span> Web Browser:</span> The web browser is an application software to explore
+            www (World Wide Web). It provides an interface between the server
+            and the client and requests to the server for web documents and
+            services.
+          </li>
+          <li>
+           <span> Web Server:</span> Web server is a program which processes the network
+            requests of the users and serves them with files that create web
+            pages. This exchange takes place using Hypertext Transfer Protocol
+            (HTTP).
+          </li>
+          <li>
+            <span>Web Pages:</span> A webpage is a digital document that is linked to the
+            World Wide Web and viewable by anyone connected to the internet has
+            a web browser.
+          </li>
+          <li>
+            <span>
+                Web Development:
+            </span> Web development refers to the building, creating,
+            and maintaining of websites. It includes aspects such as web design,
+            web publishing, web programming, and database management. It is the
+            creation of an application that works over the internet i.e.
+            websites.
+          </li>
+        </ul>
+      </div>
+      <div id="section2" class="section">
+        <h2>Web Development</h2>
+        <ol class="web-tech-list">
+          <li>
+            <span>Frontend Development:</span> The part of a website that the user interacts
+            directly is termed as front end. It is also referred to as the
+            'client side' of the application.
+          </li>
+          <li>
+            <span>
+                Backend Development: 
+            </span>Backend is the server side of a website. It is
+            the part of the website that users cannot see and interact. It is
+            the portion of software that does not come in direct contact with
+            the users. It is used to store and arrange data.
+          </li>
+        </ol>
+      </div>
+      <div id="section3" class="section">
+        <h2>Frontend Development Languages</h2>
+        <ul class="web-tech-list">
+          <li>
+            <span>HTML:</span> HTML stands for Hypertext Markup Language. It is used to
+            design the front-end portion of web pages using a markup language.
+            HTML is the combination of Hypertext and Markup language. Hypertext
+            defines the link between the web pages. The markup language is used
+            to define the text documentation within the tag which defines the
+            structure of web pages.
+          </li>
+          <li>
+            <span>CSS:</span> Cascading Style Sheets fondly referred to as CSS is a simply
+            designed language intended to simplify the process of making web
+            pages presentable. CSS allows you to apply styles to web pages. More
+            importantly, CSS enables you to do this independent of the HTML that
+            makes up each web page.
+          </li>
+          <li>
+            <span>JavaScript:</span> JavaScript is a famous scripting language used to create
+            magic on the sites to make the site interactive for the user. It is
+            used to enhancing the functionality of a website to running cool
+            games and web-based software.
+          </li>
+          <li>
+           <span> AJAX:</span> Ajax is an acronym for Asynchronous Javascript and XML. It is
+            used to communicate with the server without refreshing the web page
+            and thus increasing the user experience and better performance.
+          </li>
+        </ul>
+      </div>
+      <div id="section4" class="section">
+        <h2>Backend Development Languages</h2>
+        <ul class="web-tech-list">
+          <li>
+            <span>PHP:</span> PHP is a server-side scripting language designed specifically
+            for web development. Since PHP code executed on the server-side, so
+            it is called a server-side scripting language.
+          </li>
+          <li>
+            <span>Node.js:</span> Node.js is an open-source and cross-platform runtime
+            environment for executing JavaScript code outside a browser. You
+            need to remember that NodeJS is not a framework, and it’s not a
+            programming language. Most people are confused and understand it’s a
+            framework or a programming language. We often use Node.js for
+            building back-end services like APIs like Web App or Mobile App.
+            It's used in production by large companies such as Paypal, Uber,
+            Netflix, Wallmart, and so on.
+          </li>
+          <li>
+           <span>
+            Python:
+           </span> Python is a programming language that lets you work quickly
+            and integrate systems more efficiently.
+          </li>
+          <li>
+            <span>Ruby:</span> Ruby is a dynamic, reflective, object-oriented,
+            general-purpose programming language. Ruby is a pure Object-Oriented
+            language developed by Yukihiro Matsumoto. Everything in Ruby is an
+            object except the blocks but there are replacements too for it i.e
+            procs and lambda. The objective of Ruby's development was to make it
+            act as a sensible buffer between human programmers and the
+            underlying computing machinery.
+          </li>
+          <li>
+            <span>Java:</span> Java is one of the most popular and widely used programming
+            languages and platforms. It is highly scalable. Java components are
+            easily available.
+          </li>
+          <li>
+            <span>JavaScript:</span> JavaScript can be used as both (front end and back end)
+            programming.
+          </li>
+          <li>
+            <span>Golang:</span> Golang is a procedural and statically typed programming
+            language having the syntax similar to C programming language.
+            Sometimes it is termed as Go Programming Language.
+          </li>
+          <li>
+           <span> DBMS:</span> The software which is used to manage database is called
+            Database Management System (DBMS).
+          </li>
+        </ul>
+      </div>
+      <div id="section5" class="section">
+        <h2>Data Format</h2>
+        <p>
+          Format of data is used by web applications to communicate with each
+          other. It is light weight text based data interchange format which
+          means, it is simpler to read and write.
+        </p>
+        <p>Below are two common data formats used in web development:</p>
+        <ul class="web-tech-list">
+          <li>
+            <span>XML: </span>Extensible Markup Language (XML) is a markup language that
+            defines a set of rules for encoding documents in a format that is
+            both human-readable and machine-readable.
+          </li>
+          <li>
+            <span>JSON:</span> JSON or JavaScript Object Notation is a format for structuring
+            data.
+          </li>
+        </ul>
+        <p>
+         <span> API:</span> API is an abbreviation for Application Programming Interface
+          which is a collection of communication protocols and subroutines used
+          by various programs to communicate between them.
+        </p>
+      </div>
+      <div id="section6" class="section">
+        <h2>Web Protocols</h2>
+        <p>
+          Web protocols are set of rules followed by everyone communicating over
+          the web.
+        </p>
+        <ul class="web-tech-list">
+          <li>
+            <span>HTTP:</span> The Hypertext Transfer Protocol (HTTP) is designed to enable
+            communications between clients and servers. HTTP works as a
+            request-response protocol between a client and server. A web browser
+            may be the client, and an application on a computer that hosts a web
+            site may be the server.
+          </li>
+       <li>
+       <span> TCP/IP Model:</span> The TCP/IP model is a fundamental framework for computer networking. It stands for Transmission Control Protocol/Internet Protocol, which are the core protocols of the Internet. This model defines how data is transmitted over networks, ensuring reliable communication between devices.
+       </li>
+<li>
+   <span> User Datagram Protocol (UDP):</span> User Datagram Protocol (UDP) is a Transport Layer protocol. UDP is a part of the Internet Protocol suite, referred to as UDP/IP suite. The UDP helps to establish low-latency and loss-tolerating connections over the network. The UDP enables process-to-process communication.
+</li>
+<li>
+   <span> File Transfer Protocol (FTP) in Application Layer: </span>File Transfer Protocol(FTP) is an application layer protocol that moves files between local and remote file systems. It runs on top of TCP, like HTTP. To transfer a file, 2 TCP connections are used by FTP in parallel: control connection and data connection.
+</li>
+<li>
+    <span>Simple Mail Transfer Protocol (SMTP):</span> Simple Mail Transfer mechanism (SMTP) is a mechanism for exchanging email messages between servers. It is an essential component of the email communication process and operates at the application layer of the TCP/IP protocol stack. SMTP is a protocol for transmitting and receiving email messages. In this article, we are going to discuss every point about SMTP.
+</li>
+    </div>
+      <div id="section7" class="section">
+        <h2>Graphics
+        </h2>
+        <p>
+            Graphical elements are one of the key feature of any webpage. They can be used to convey important points better than text does and beautify the webpage.
+
+
+
+        </p>
+<ol class="web-tech-list">
+    <li>
+       <span> Canvas:</span> The HTML “canvas” element is used to draw graphics via JavaScript.
+
+    </li>
+<li>
+   <span> SVG:</span> SVG stands for Scalable Vector Graphics. It basically defines vector-based graphics in XML format.
+</li>
+</ol>
+
+    </div>
+
+    <div id="section8" class="section">
+        <h2>Some Important Links on Web Technology
+
+        </h2>
+       
+<ul class="web-tech-list">
+    <li>
+<a href="">Mozilla Developer Network (MDN) Web Docs</a>
+    </li>
+<li>
+    <a href="">W3Schools</a>
+</li>
+<li>
+    <a href="">CSS-Tricks</a>
+</li>
+</ul>
+
+    </div>
+    </div>
+  </body>
+</html>
